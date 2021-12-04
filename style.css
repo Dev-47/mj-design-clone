@@ -72,12 +72,10 @@ footer i {
 
 .right-one {
   flex-direction: column;
-  width: 50%;
 }
 
 .right-two {
   flex-direction: column-reverse;
-  width: 50%;
 }
 
 .right .desc {
