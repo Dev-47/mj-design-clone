@@ -1,0 +1,179 @@
+.left,
+.right {
+  height: 100vh;
+}
+
+/* left section  */
+.left {
+  width: 40%;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  animation-name: first;
+  animation-duration: 3s;
+  animation-iteration-count: forwards;
+}
+
+.nav-bar ul {
+  display: flex;
+  font-weight: 300;
+  justify-content: space-evenly;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  color: rgb(148, 141, 141);
+}
+
+.active-nav {
+  color: rgb(250, 250, 250);
+}
+
+.left-main {
+  padding: 1.3rem;
+  margin-left: 5px;
+}
+
+.left-main h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: rgb(250, 250, 250);
+}
+
+.left-main p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ccc;
+}
+
+footer {
+  padding: 1rem;
+}
+
+footer i {
+  color: #ccc;
+  padding: 0.4rem;
+}
+
+/* right section  */
+.right {
+  width: 60%;
+  display: flex;
+}
+
+.right .about {
+  display: flex;
+  height: 100%;
+}
+
+.right-one {
+  flex-direction: column;
+  width: 50%;
+}
+
+.right-two {
+  flex-direction: column-reverse;
+  width: 50%;
+}
+
+.right .desc {
+  height: 30%;
+  padding: 3em;
+}
+
+.right img {
+  /* width: 100%; */
+  height: 70%;
+}
+
+.right .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  animation-name: text;
+  animation-duration: 3s;
+  animation-iteration-count: forwards;
+}
+
+.right .desc > h4,
+.right .desc > p {
+  margin: 10px 0;
+}
+
+.right .desc > button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0.5em 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+.image-one {
+  position: relative;
+  animation-name: pic1;
+  animation-duration: 3s;
+  animation-iteration-count: forwards;
+}
+
+.image-two {
+  position: relative;
+  animation-name: pic2;
+  animation-duration: 3s;
+  transition: ease-in;
+  animation-iteration-count: forwards;
+}
+
+/* keyframes */
+
+@keyframes first {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes pic1 {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes pic2 {
+  0% {
+    bottom: -50%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+@keyframes text {
+  0% {
+    top: -50%;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}
